@@ -357,7 +357,6 @@ button{
 .portfolio-card{
     width: 370px;
     height: 404px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-screen-text{
     font-size: 18px;
@@ -382,20 +381,26 @@ button{
     height: 294px;
     overflow: hidden;
 }
+.portfolio-link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay{ 
     transform:translateY(0);
     height: 294px;
 }
+.portfolio-link:hover,
+.portfolio-link:focus{
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-container-title{
     padding: 20px 10px 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: 0;
-}
-.portfolio-card:hover,
-.portfolio-card:focus{
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-card-title{
     font-size: 18px;
